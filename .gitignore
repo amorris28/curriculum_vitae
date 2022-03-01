@@ -1,13 +1,5 @@
 *.pdf
-Morris_CV.aux
-Morris_CV.out
-Morris_CV.log
-Morris_CV.synctex.gz
 old_docs/
-Morris_CV.bbl
-Morris_CV.blg
-Morris_CV.fdb_latexmk
-Morris_CV.fls
 .Rproj.user
 Ben Rubin
 Rstudio
@@ -21,3 +13,5 @@ examples
 *.log
 *.out
 *.synctex.gz
+*.bbl
+*.blg
