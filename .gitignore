@@ -1,4 +1,5 @@
 *.pdf
+.Rproj
 old_docs/
 .Rproj.user
 Ben Rubin
@@ -15,4 +16,4 @@ examples
 *.synctex.gz
 *.bbl
 *.blg
-*.Rhistory
+.Rhistory
