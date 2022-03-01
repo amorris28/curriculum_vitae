@@ -1,5 +1,5 @@
 *.pdf
-.Rproj
+*.Rproj
 old_docs/
 .Rproj.user
 Ben Rubin
