@@ -1,0 +1,319 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andrew}{Morris}
+\title{NSF Research Fellow}                               % optional, remove / comment the line if not wanted
+%\address{1573 Wilson St.}{Eugene, OR 97402}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(860)~670~4130}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{amorris3@uoregon.edu}                               % optional, remove / comment the line if not wanted
+\homepage{ahmorris.org}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{andrew-morris-71033a41}                        % optional, remove / comment the line if not wanted
+\social[twitter]{ahmorris1}                             % optional, remove / comment the line if not wanted
+\social[github]{amorris28}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{avatar}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\[3em]%
+  \includegraphics[width=25mm]{signature}\\% Insert signature
+  {\bfseries \@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfill%
+    {\color{color2}\itshape\enclname: \@enclosure}}}
+\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary}
+Biologist and data scientist asking and answering fundamental
+biological questions. I take a tool-agnostic approach leveraging machine
+learning and statistics to make discoveries
+from deep marker gene and metagenomic sequencing data. I
+am passionate about communication and reproducible research and demonstrate this
+with a track record of published peer-reviewed articles and funded grant
+proposals as well as maintaining code and data in public repositories. I have
+collaborated with research teams of three to fourteen members made up of diverse
+stakeholders and led multi-year research efforts. Finally, I prioritize Deep Work for focused productivity.
+
+\section{Education}
+\cventry{In progress}{PhD Biology}{University of Oregon}{Eugene, OR}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2017}{MS Soil Science}{Penn State University}{State College, PA}{}{}
+\cventry{2014}{BS Plant Sciences}{Cornell University}{Ithaca, NY}{}{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Experience}
+%\subsection{Graduate School}
+\cventry{2017--present}{NSF Graduate Research Fellow}{University of
+  Oregon}{Eugene, OR}{}{
+  \begin{itemize}
+    \item Used artificial selection and metagenome-wide association tests to identify
+      members of the soil microbiome that reduce greenhouse gas emissions.
+    \item Synthesized knowledge from diverse fields of ecology and evolution
+      to bring a new perspective to microbiome science.
+    \item Awarded multiple grants and fellowships to fund my research
+including the prestigious National Science Foundation Graduate Research
+Fellowship. 
+\item Authored six peer-reviewed
+scientific papers including one published in \textit{Philosophical Transactions of the Royal
+Society}, the oldest English-language scientific journal.
+\end{itemize}
+}
+
+\cventry{2015--2017}{Graduate Research Assistant}{Penn State University}{State
+College, PA}{}{
+\begin{itemize}
+  \item Performed independent research on soil microorganisms that
+    demonstrated new ways of reducing the impact of agriculture on climate change. 
+  \item Conducted research with a collaborative team of over 14 people
+    including scientists, technicians, extension educators, and farmers. 
+\item Communicated technical concepts to diverse audiences ranging from
+  field-based teaching in glacial ecosystems in Alaska and Peru to farmer field
+  days in central Pennsylvania.
+\end{itemize}
+}
+
+%\subsection{}
+\cventry{2015}{Research Assistant}{University of Delaware}{Newark,
+  DE}{}{
+\begin{itemize}
+  \item Designed and built experimental rice paddies to study the effects of
+    arsenic on rice, which is a major global health challenge. 
+  \item Developed an affordable strategy to reduce arsenic contamination in rice by
+    amending soils with freely available rice husk ash - research that has been
+    cited over 60 times.
+  \item Led an educational field day for middle school students of color who had never been on a farm. The students learned where
+    their food comes from and grew their own rice plants.
+\end{itemize}
+}
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Skills}
+\cventry{}{Formal Training}{}{}{}{
+\begin{itemize}
+  \item Advanced biostatistics coursework with both frequentist and Bayesian inference
+    using \texttt{R} and \texttt{Stan}.  
+  \item Training in
+    bioinformatics at the Marine Biology Laboratory in Woods Hole, MA using
+    \texttt{R}, \texttt{Python}, and QIIME 2 to analyze deep marker gene and metagenomic
+    data.  
+  \item Intensive workshop in machine learning for image analysis using
+    deep neural networks with \texttt{Keras} and \texttt{TensorFlow} through the
+    University of Oregon Data Science Initiative. 
+\end{itemize}
+}
+\cvdoubleitem{Typesetting}{\LaTeX, \texttt{R Markdown}, \texttt{Jupyter}}{Coding}{\texttt{R},
+\texttt{Stan}, \texttt{Python}}
+\cvdoubleitem{Computing}{HPC, Slurm, Unix}{Collaboration}{\texttt{git}, Github,
+Slack, Zoom}
+
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+%\clearpage
+
+\section{Awards}
+\cventry{2017-2021}{University of Oregon}{Graduate School}{}{}{  % arguments 3 to 6 can be left empty
+\begin{itemize}
+\item NSF Graduate Research Fellowship Award
+\item General University Scholarship
+\item William R. Sistrom Memorial Scholarship
+\item Oregon ARCS Foundation Scholar
+\end{itemize}
+}
+
+\cventry{2015-2017}{Penn State University}{Graduate School}{}{}{
+\begin{itemize}
+\item Distinguished Master's Thesis Award
+\item Annie's Sustainable Agriculture Scholarship
+\item Scarlet Graduate Fellowship in Watershed Stewardship Award
+\item Katherine Mabis McKenna Fellowship Award
+\end{itemize}
+}
+
+\cventry{2010-2014}{Cornell University and Ithaca College}{Undergraduate}{}{}{
+\begin{itemize}
+\item Hatch/Multistate Grant
+\item Flora Brown Award
+\end{itemize}
+}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{abbrv}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+\section{Selected Publications}
+
+\cvline{2021}{\textbf{Morris, AH}, Isbell, SA, Saha, D and Kaye, JP. Mitigating
+  nitrogen pollution with under‐sown legume‐grass cover crop mixtures in winter
+  cereals. \textit{Journal of Environmental Quality}, Accepted Author Manuscript.
+\href{https://www.doi.org/10.1002/jeq2.20193}{https://doi.org/10.1002/jeq2.20193}}
+
+\cvline{2020}{\textbf{Morris, AH}, Meyer, KM, and Bohannan, BJM. Linking microbial communities to ecosystem functions: what we can
+  learn from genotype–phenotype mapping in organisms. \textit{Philosophical
+    Transactions of the Royal
+  Society B: Biological Sciences},
+  375(1798), 20190244.
+\href{https://www.doi.org/10.1098/rstb.2019.0244}{https://doi.org/10.1098/rstb.2019.0244}}
+
+\cvline{2016}{Seyfferth, AL, \textbf{Morris, AH}, Gill, R,
+  Kearns, KA, Mann, JN, Paukett, M, and Leskanic, C. Soil Incorporation of
+  Silica-Rich Rice Husk Decreases Inorganic Arsenic in Rice Grain.
+  \textit{Journal of Agricultural and Food Chemistry}, 64(19), 3760-3766.
+\href{https://www.doi.org/10.1021/acs.jafc.6b01201}{https://doi.org/10.1021/acs.jafc.6b01201}}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Thesis advisors and supervisors}{\begin{itemize}\item Dr. Brendan
+%  J.M. Bohannan\item Dr. Jason P. Kaye\item Dr. Angelia L. Seyfferth\end{itemize}}
+%%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+%\section{Writing Samples}
+%
+%\cventry{2019}{Linking microbial communities to ecosystem functions: what we can
+%learn from genotype-phenotype mapping in organisms}{Research abstract on bioRxiv}{}{}{\url{https://www.biorxiv.org/content/10.1101/740373v1}}
+%\cventry{2018}{Funded grant application for the William R. Sistrom
+%Memorial Scholarship}{University of Oregon, Department of Biology}{}{}{\url{https://ahmorris.org/assets/Morris_Sistrom_Statement.pdf}}
+%\cventry{2019}{Using blogdown with github pages}{R tutorial
+%blog post}{}{}{\url{https://ahmorris.org/blog/2019/09/03/blogdown-on-github-pages/}}
+%\cventry{}{See also my publication
+%page}{}{}{}{\url{https://ahmorris.org/pages/pubs}}
+%\cventry{2018}{Example script for an intro to R laboratory}{University of
+%Oregon, Department of
+%Biology}{}{}{\url{https://ahmorris.org/assets/ecoli_growth_curve.R}}
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Becky Bajan}{RStudio, Inc.\\250 Northern Ave\\Boston, MA 02210}
+%\date{September 06, 2019}
+%\opening{Dear Becky Bajan,}
+%\closing{Sincerely,}
+%%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%I am writing regarding the Technical Writer position at RStudio. As a scientist
+%and instructor I have over four years of experience using and teaching R and
+%have demonstrated success in technical writing by communicating to multiple
+%audiences from new users to specialists. This
+%background has prepared me to create content that reaches diverse audiences and
+%facilitates a smooth experience for RStudio's users.
+%
+%I am an author on multiple papers published or in review at peer-reviewed
+%scientific journals. In addition, I have been successful at writing funded
+%grant proposals including for the National Science Foundation Graduate Research
+%Fellowship. Scientific writing requires telling a compelling story to a broad
+%audience while also being scientifically rigorous, skills that will payoff when
+%developing guides for RStudio. In addition to writing for technical audiences,
+%I have particularly enjoyed communicating to farmers, students, and other
+%non-specialists by both motivating my research and illustrating how they can implement the
+%latest scientific solutions.
+%
+%In addition, I am enthusiastic about R as well as RStudio's
+%mission of creating open and accessible data science tools. I enjoy
+%learning the nuances of using R for producing figures, writing blogs, and building
+%packages. I have led workshops to rapidly move new users from their first steps
+%in R to generating publication-quality figures
+%and results. My teaching philosophy is to meet students where
+%they are and help them reach their next milestone and I hope to bring this same
+%empathy to writing for RStudio.
+%
+%Finally, academic laboratories are environments with few deadlines and
+%little oversight where you are expected to make progress and seek support
+%through your own initiative. I am used to working on distributed, global teams
+%and I prize independence as well as
+%collaboration; I am comfortable working in this kind of unstructured
+%environment through self-motivation and organization. I am familiar with both
+%the challenges and rewards for this organizational structure and am confident that I
+%will thrive in a similarly independent environment at RStudio.
+%
+%As an experienced R user and a fan of RStudio, I would be thrilled to have the
+%chance to discuss with you how my writing can improve user
+%experience at RStudio as well as how I could learn and grow as an
+%RStudio team member. You may reach me at 860-670-4130 or amorris3@uoregon.edu.
+%Thank you for your consideration and I look forward to
+%meeting with you soon. 
+%
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
