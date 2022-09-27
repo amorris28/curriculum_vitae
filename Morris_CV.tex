@@ -4,6 +4,7 @@
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
 \usepackage{comment}
+\usepackage{etaremune}
 
 % Simpler bibsection for CV sections
 % (thanks to natbib for inspiration)
@@ -13,7 +14,7 @@
 \newlength{\bibsep}
  {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
 \newenvironment{bibsection}%
-        {\begin{enumerate}{}{%
+        {\begin{etaremune}{}{%
 %        {\begin{list}{}{%
        \setlength{\leftmargin}{\bibhang}%
        \setlength{\itemindent}{-\leftmargin}%
@@ -21,7 +22,7 @@
        \setlength{\parsep}{\z@}%
         \setlength{\partopsep}{0pt}%
         \setlength{\topsep}{0pt}}}
-        {\end{enumerate}\vspace{-.6\baselineskip}}
+        {\end{etaremune}\vspace{-.6\baselineskip}}
 %        {\end{list}\vspace{-.6\baselineskip}}
 \makeatother
 
