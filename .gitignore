@@ -1,20 +1,8 @@
-*.pdf
-*.Rproj
-old_docs/
-.Rproj.user
-Ben Rubin
-Rstudio
-*.jpg
-tpavlic_cv*
-RStudio
-examples
 *.aux
+*.bbl
 *.fdb_latexmk
 *.fls
 *.log
 *.out
+*.pdf
 *.synctex.gz
-*.bbl
-*.blg
-.Rhistory
-jobs.xlsx
