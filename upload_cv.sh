@@ -1,5 +1,5 @@
 #!/bin/bash
-# A script that pushes my csv and updates my files
+# A script that pushes my cv and updates my files
 CWD=$(pwd)
 
 cd ~/Projects/curriculum_vitae
